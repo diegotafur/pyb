@@ -1,47 +1,16 @@
-
-@import "https://fonts.googleapis.com/css?family=Lato|Open+Sans";
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-}
-
-body{
-    font-family: "Lato",Arial, Helvetica, sans-serif;
-}
-
-.contenedor{
-    width: 100%;
-    max-width: 100%;
-    display: grid;
-    grid-template-columns: repeat(1,1fr); /*Crea columnas*/
-    grid-template-rows: repeat(4,auto); /*crea cuantas filas quieres*/
-    grid-template-areas: "header";  /*declara el area*/
-}
-
-.contenedor .header{
-    height: 95vh;
-    background: linear-gradient(to right bottom,rgba(112, 86, 19, 0.6),rgba(255, 196, 0, 0.6)), url("~/imagenes/land.jpg") center no-repeat;
-    background-size: cover;
-    position: relative;
-    clip-path: polygon(0 0, 100% 0,100% 80vh,0 100%);
-    /*animation: movimiento 10s linear infinite alternate;*/
-    grid-area: header;
-}
-
 nav{
-    width: 80%;
+    float: right;
+    /* width: 80%;
     height: 7rem;
     line-height: 7rem;
     position: absolute;
     top: 2rem;
-    left: 100%;
+    left: 50%;
     font-size: 1.4rem;
     transform: translateX(-50%);
+    font-family: "Open Sans",Arial, Helvetica, sans-serif;
     text-transform: uppercase;
-   
+    background-color: aquamarine; */
 }
 .clearfix{
     clear: both;
@@ -80,7 +49,7 @@ nav ul li a:hover{
 
 .text-box{
     position: absolute;
-    top: 40%;
+    top: 60%;
     left:50%;
     transform: translate(-50%, -50%);
     font-size: 3rem;
@@ -161,6 +130,16 @@ nav ul li a:hover{
         transform: translate(0)
     }
 }
+@keyframes movimiento{
+
+	from{
+		background-position:  left bottom;
+	}
+	to{
+		background-position:  right top;
+	}
+
+}
 
 /*Para el menu movil*/
 @media(max-width: 1200px){
@@ -201,20 +180,5 @@ nav ul li a:hover{
     }
     .logo-box{
         display: block;
-    }
-    .heading-main{
-        font-size: 3rem;
-        font-weight: 200;
-        letter-spacing: 2rem;
-        margin-right: -1.5rem;
-    }
-    .heading-sub{
-        font-size: 1rem;
-        font-weight: 350;
-        letter-spacing: 1.5rem;
-        margin-right: -1.75rem;
-    }
-    .btn{
-        font-size: 1.5rem;
     }
 }
