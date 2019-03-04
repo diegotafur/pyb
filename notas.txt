@@ -1,3 +1,7 @@
+
+ls -l
+git add .
+git commit -m 'Texto que quieras'
 git remote add origin https://github.com/diegotafur/pyb.git
 git push -u origin master
 
@@ -12,4 +16,6 @@ https://www.youtube.com/watch?v=40cowu85JiI
 https://www.youtube.com/watch?v=kEt5DCHeyJo
 
 https://www.destacaimagen.com/diseno-y-maquetacion-web-smartphones-y-tablets/
+
+https://www.youtube.com/watch?v=RRegIKu-z3k
 
